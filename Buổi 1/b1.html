@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b1.css">
+</head>
+<body>
+    <div class="LoginForm">
+        <input type="text" placeholder="Nhập Username" id="Usernames" class="UsernameBox"></input>
+        <input type="password" placeholder="Nhập Password" id="Passwords" class="PasswordBox"></input>
+        <button class="ButtonBox" id="ButtonLogin" onclick="login()">Đăng nhập</button>
+    </div>
+    <script>
+    function login(ButtonLogin){
+        var UsernamesForm = document.getElementById('Usernames');
+        var PasswordsForm = document.getElementById('Passwords');
+        var LoginButton = document.getElementById('ButtonLogin');
+        // LoginButton.addEventListener("click")
+        if(UsernamesForm.value.length < 5){
+            alert("Tên tài khoản của bạn quá ngắn");
+        }
+        if(PasswordsForm.value.length < 8){
+            alert("Mật khẩu bảo mật yếu hoặc quá ngắn");
+        }
+        // if(UsernamesForm.value == "lolman" && PasswordsForm.value == "123"){
+        //     alert("Đăng nhập thành công")
+        // }else{
+        //     alert("Đăng nhập thất bại")
+        // }
+    }
+    </script>
+</body>
+</html>

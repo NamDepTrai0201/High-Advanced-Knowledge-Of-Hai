@@ -1,0 +1,15 @@
+.LoginForm{
+    width: 200px;
+    border: 1px solid;
+    margin-left: 600px;
+    height: 90px;
+}
+.PasswordBox , .UsernameBox{
+    margin-left: 15px;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+.ButtonBox{
+    margin-left: 57px;
+    margin-top: 7px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b1v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+ </head>
+<body>
+    <div class="LoginFormContainer">
+        <h2 class="SignUpWord">Sign up</h2>
+        <h3 class="FirstH3InLoginForm">The Account</h3>
+        <div class="GmailAndPasswordContainer">
+        <input type="text" placeholder="Gmail" class="GmailInput" id="Gmail"></input>
+        <input type="password" placeholder="Passwords" class="PasswordInput" id="Password"></input>
+        <button type="button" class="ButtonLogin1" onclick='login()'>Đăng nhập</button>
+        <h2 class="RandomWords">Or</h2>
+        <div class="ConnectToAnotherAccountContainer">
+        <a href="https://www.facebook.com/" class="FirstAInLoginForm">Connect To Facebook</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="" class="FirstLogoInLoginForm">
+        <a href="https://twitter.com/home" class="SecondAInLoginForm">Connect To Twitter</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" class="SecondLogoInLoginForm">
+        <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="ThirdAInLoginForm">Connect To Gmail</a>
+        <img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png" alt="" class="ThirdLogoInLoginForm">
+        </div>
+        </div>
+    </div>
+    <script>
+        function login(){
+            var Username = document.getElementById('Gmail')
+            var Passwords = document.getElementById('Password')
+            if(Username.value == "MaNameIsHaiHandsomeBoii" && Passwords.value == "MyUserToldAll"){
+                alert('Login Successfully');
+            }else{
+                alert('Login Failed')
+            };
+            if(Username.value.length < 5){
+                alert('Your Account Are Not Exist (Require more than 5)')
+            }
+            if(Passwords.value.length < 5){
+                alert('Your Passwords Require More Than 5 Key Words')
+            }
+        }
+    </script>
+</body>
+</html>

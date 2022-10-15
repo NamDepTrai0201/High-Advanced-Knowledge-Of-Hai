@@ -1,0 +1,130 @@
+.LoginFormContainer{
+    border: 1px solid;
+    width: 500px;
+    margin-left: 425px;
+    height: 290px;
+    font-family: 'Roboto', sans-serif;
+}   
+.SignUpWord{
+    font-size: 0.8cm;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.FirstH3InLoginForm{
+    font-size: 0.6cm;
+    margin-top: -10px;
+    margin-left: 20px;
+    color: grey;
+}
+.GmailInput , .PasswordInput{
+    display: flex;
+    width: 190px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+    font-size: 0.5cm;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.GmailInput{
+    margin-top: -10px;
+}
+.PasswordInput{
+    margin-top: 10px;
+}
+.ButtonLogin1{
+    width: 135px;
+    /* border-radius: 10px; */
+    height: 30px; 
+    margin-left: 20px;
+    margin-top: 15px;
+    /* background-color: rgb(161, 161, 161); */
+    color: rgb(0, 0, 0);
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.5cm;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.FirstAInLoginForm{
+    position: absolute;
+    border: 1px solid;
+    border-color: #1D3C78;
+    margin-left: 140px;
+    margin-top: -105px;
+    width: 153px;
+    height: 23px;
+    border-radius: 5px;
+    /* text-align: center; */
+    padding-top: 3px;
+    color: white;
+    background-color: #1D3C78;
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.SecondAInLoginForm{
+    position: absolute;
+    border: 1px solid;
+    border-color: rgb(29, 155, 240);
+    margin-left: 140px;
+    margin-top: -60px;
+    width: 153px;
+    height: 23px;
+    border-radius: 5px;
+    /* text-align: center; */
+    padding-top: 3px;
+    color: rgb(29, 155, 240);
+    background-color: rgb(255, 255, 255);
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.ThirdAInLoginForm{
+    position: absolute;
+    border: 1px solid;
+    border-color: rgb(252, 42, 42);
+    margin-left: 140px;
+    margin-top: -15px;
+    width: 153px;
+    height: 23px;
+    border-radius: 5px;
+    /* text-align: center; */
+    padding-top: 3px;
+    color: white;
+    background-color: rgb(252, 42, 42);
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.FirstLogoInLoginForm{
+    width: 25px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: -104px;
+}
+.SecondLogoInLoginForm{
+    width: 25px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: -56px;
+}
+.ThirdLogoInLoginForm{
+    width: 30px;
+    position: absolute;
+    margin-left: 143px;
+    margin-top: -15px;
+}
+.RandomWords{
+    position: absolute;
+    margin-left: 235px;
+    margin-top: -89px;
+}
+.ConnectToAnotherAccountContainer{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -30px;
+}
