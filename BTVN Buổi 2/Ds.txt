@@ -1,0 +1,11 @@
+1 . Khái niệm reduce ()
+- Trong js sẽ thực thi một "reducer" callback function do chúng ta cung cấp, trên mỗi phần tử của mảng, nó sẽ chuyển giá trị mà chúng ta return của phần tử trước cho phần tử kế tiếp. Sau khi duyệt qua tất cả phần tử của mảng thì kết quả cuối cùng ta thu được một giá trị duy nhất.
+- Cú pháp : reduce((previousValue, currentValue, currentIndex, array) => { ... }, initialValue)
+
+2. Khái niệm Split ()
+- Phương thức split() vốn được sử dụng để tách một chuỗi thành nhiều phần nhỏ tại các vị trí chứa ký tự phân cách trong chuỗi ban đầu và thu về kết quả dưới dạng một mảng.
+- Cú pháp : text.split(separator, limit)
+ 
+3. Khái niệm Slice ()
+- Hàm slice có chức năng trích xuất một số phần tử của mảng, vị trí bắt đầu và kết thúc việc trích xuất sẽ được xác định bởi tham số truyền vào hàm.
+- Cú pháp : array.slice(start, end)

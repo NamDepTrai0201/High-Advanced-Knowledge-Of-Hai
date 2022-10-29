@@ -52,14 +52,14 @@ a{
     list-style: none;
     text-decoration: none;
 }
-.FirstAInLoginForm{
+#LoginFacebook{
     position: absolute;
     border: 1px solid;
     border-color: #1D3C78;
     margin-left: 140px;
     margin-top: -105px;
-    width: 153px;
-    height: 23px;
+    width: 190px;
+    height: 30px;
     border-radius: 5px;
     /* text-align: center; */
     padding-top: 3px;
@@ -67,22 +67,26 @@ a{
     background-color: #1D3C78;
     padding-left: 35px;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.4cm;
+    cursor: pointer;
 }
 .SecondAInLoginForm{
     position: absolute;
     border: 1px solid;
-    border-color: rgb(29, 155, 240);
+    border-color: rgb(0, 0, 0);
     margin-left: 140px;
     margin-top: -60px;
-    width: 153px;
-    height: 23px;
+    width: 190px;
+    height: 30px;
     border-radius: 5px;
     /* text-align: center; */
-    padding-top: 3px;
-    color: rgb(29, 155, 240);
-    background-color: rgb(255, 255, 255);
-    padding-left: 35px;
+    /* padding-top: 3px; */
+    color: rgb(3, 3, 3);
+    background-color: rgb(245, 241, 241);
+    padding-left: 22px;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.4cm;
+    cursor: pointer;
 }
 .ThirdAInLoginForm{
     position: absolute;
@@ -90,15 +94,17 @@ a{
     border-color: rgb(252, 42, 42);
     margin-left: 140px;
     margin-top: -15px;
-    width: 153px;
-    height: 23px;
+    width: 190px;
+    height: 30px;
     border-radius: 5px;
     /* text-align: center; */
     padding-top: 3px;
     color: white;
     background-color: rgb(252, 42, 42);
-    padding-left: 35px;
+    padding-left: 25px;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.4cm;
+    cursor: pointer;
 }
 .FirstLogoInLoginForm{
     width: 25px;
@@ -109,8 +115,8 @@ a{
 .SecondLogoInLoginForm{
     width: 25px;
     position: absolute;
-    margin-left: 145px;
-    margin-top: -56px;
+    margin-left: 144px;
+    margin-top: -58px;
 }
 .ThirdLogoInLoginForm{
     width: 30px;

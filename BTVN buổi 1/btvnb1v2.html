@@ -1,56 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./b1v2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
- </head>
-<body>
-    <div class="LoginFormContainer">
-        <h2 class="SignUpWord">Sign up</h2>
-        <h3 class="FirstH3InLoginForm">The Account</h3>
-        <div class="GmailAndPasswordContainer">
-        <input type="text" placeholder="Gmail" class="GmailInput" id="Gmail"></input>
-        <input type="password" placeholder="Passwords" class="PasswordInput" id="Password"></input>
-        <button type="button" class="ButtonLogin1" onclick='login()'>Đăng nhập</button>
-        <h2 class="RandomWords">Or</h2>
-        <div class="ConnectToAnotherAccountContainer">
-        <a href="https://www.facebook.com/" class="FirstAInLoginForm">Connect To Facebook</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="" class="FirstLogoInLoginForm">
-        <a href="https://twitter.com/home" class="SecondAInLoginForm">Connect To Twitter</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" class="SecondLogoInLoginForm">
-        <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="ThirdAInLoginForm">Connect To Gmail</a>
-        <img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png" alt="" class="ThirdLogoInLoginForm">
-        </div>
-        </div>
-    </div>
-    <script>
-        function login(){
-            var Username = document.getElementById('Gmail')
-            var Passwords = document.getElementById('Password')
-            if(Username.value == "MaNameIsHaiHandsomeBoii" && Passwords.value == "MyUserToldAll"){
-                alert('Login Successfully');
-            }else{
-                alert('Login Failed')
-            };
-            if(Username.value.length < 5){
-                alert('Your Account Are Not Exist (Require more than 5)')
-            }
-            if(Passwords.value.length < 5){
-                alert('Your Passwords Require More Than 5 Key Words')
-            }
-        }
-    </script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- <link rel="stylesheet" href="/BTVN buổi 1/b1vnb1v2.css"> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.LoginFormContainer {
+				border: 1px solid;
+				width: 500px;
+				margin-left: 425px;
+				height: 290px;
+				font-family: "Roboto", sans-serif;
+			}
+			.SignUpWord {
+				font-size: 0.8cm;
+				margin-top: 30px;
+				margin-left: 20px;
+				font-family: "Roboto", sans-serif;
+			}
+			.FirstH3InLoginForm {
+				font-size: 0.6cm;
+				margin-top: -10px;
+				margin-left: 20px;
+				color: grey;
+			}
+			.GmailInput,
+			.PasswordInput {
+				display: flex;
+				width: 190px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 5px;
+				border: 1px solid;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				color: black;
+				font-size: 0.5cm;
+				font-family: "Josefin Sans", sans-serif;
+			}
+			.GmailInput {
+				margin-top: -10px;
+			}
+			.PasswordInput {
+				margin-top: 10px;
+			}
+			.ButtonLogin1 {
+				width: 135px;
+				/* border-radius: 10px; */
+				height: 30px;
+				margin-left: 20px;
+				margin-top: 15px;
+				/* background-color: rgb(161, 161, 161); */
+				color: rgb(0, 0, 0);
+				font-family: "Cabin", sans-serif;
+				font-size: 0.5cm;
+			}
+			a {
+				list-style: none;
+				text-decoration: none;
+			}
+			#LoginFacebook {
+				position: absolute;
+				border: 1px solid;
+				border-color: #1d3c78;
+				margin-left: 140px;
+				margin-top: -105px;
+				width: 190px;
+				height: 30px;
+				border-radius: 5px;
+				/* text-align: center; */
+				padding-top: 3px;
+				color: white;
+				background-color: #1d3c78;
+				padding-left: 35px;
+				font-family: "Roboto", sans-serif;
+				font-size: 0.4cm;
+				cursor: pointer;
+			}
+			.SecondAInLoginForm {
+				position: absolute;
+				border: 1px solid;
+				border-color: rgb(0, 0, 0);
+				margin-left: 140px;
+				margin-top: -60px;
+				width: 190px;
+				height: 30px;
+				border-radius: 5px;
+				/* text-align: center; */
+				/* padding-top: 3px; */
+				color: rgb(3, 3, 3);
+				background-color: rgb(245, 241, 241);
+				padding-left: 22px;
+				font-family: "Roboto", sans-serif;
+				font-size: 0.4cm;
+				cursor: pointer;
+			}
+			.ThirdAInLoginForm {
+				position: absolute;
+				border: 1px solid;
+				border-color: rgb(252, 42, 42);
+				margin-left: 140px;
+				margin-top: -15px;
+				width: 190px;
+				height: 30px;
+				border-radius: 5px;
+				/* text-align: center; */
+				padding-top: 3px;
+				color: white;
+				background-color: rgb(252, 42, 42);
+				padding-left: 25px;
+				font-family: "Roboto", sans-serif;
+				font-size: 0.4cm;
+				cursor: pointer;
+			}
+			.FirstLogoInLoginForm {
+				width: 25px;
+				position: absolute;
+				margin-left: 145px;
+				margin-top: -104px;
+			}
+			.SecondLogoInLoginForm {
+				width: 25px;
+				position: absolute;
+				margin-left: 144px;
+				margin-top: -58px;
+			}
+			.ThirdLogoInLoginForm {
+				width: 30px;
+				position: absolute;
+				margin-left: 143px;
+				margin-top: -15px;
+			}
+			.RandomWords {
+				position: absolute;
+				margin-left: 235px;
+				margin-top: -89px;
+			}
+			.ConnectToAnotherAccountContainer {
+				position: absolute;
+				margin-left: 150px;
+				margin-top: -30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="LoginFormContainer">
+			<h2 class="SignUpWord">Sign up</h2>
+			<h3 class="FirstH3InLoginForm">The Account</h3>
+			<div class="GmailAndPasswordContainer">
+				<input
+					type="text"
+					placeholder="Gmail"
+					class="GmailInput"
+					id="GmailLogin"
+				/>
+				<input
+					type="password"
+					placeholder="Passwords"
+					class="PasswordInput"
+					id="PasswordLogin"
+				/>
+				<button
+					type="button"
+					class="ButtonLogin1"
+					onclick="login()"
+					id="ButtonLogin"
+				>
+					Đăng nhập
+				</button>
+				<h2 class="RandomWords">Or</h2>
+				<div class="ConnectToAnotherAccountContainer">
+					<!-- <a href="https://www.facebook.com/" class="FirstAInLoginForm" id="LoginFacebook">Connect To Facebook</a> -->
+					<button type="button" class="FirstAInLoginForm" id="LoginFacebook">
+						Login With Facebook
+					</button>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+						alt=""
+						class="FirstLogoInLoginForm"
+					/>
+					<!-- <a href="https://twitter.com/home" class="SecondAInLoginForm" id="LoginTwitter">Connect To Twitter</a> -->
+					<button type="button" class="SecondAInLoginForm" id="LoginGithub">
+						Login With Github
+					</button>
+					<img
+						src="https://www.kindpng.com/picc/m/128-1280192_github-logo-png-github-png-transparent-png.png"
+						alt=""
+						class="SecondLogoInLoginForm"
+					/>
+					<!-- <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="ThirdAInLoginForm">Connect To Gmail</a> -->
+					<button type="button" class="ThirdAInLoginForm" id="LoginGoggle">
+						Login With Goggle
+					</button>
+					<img
+						src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png"
+						alt=""
+						class="ThirdLogoInLoginForm"
+					/>
+				</div>
+			</div>
+		</div>
+		<script>
+			function login() {
+				var Username = document.getElementById("Gmail");
+				var Passwords = document.getElementById("Password");
+				if (
+					Username.value == "MaNameIsHaiHandsomeBoii" &&
+					Passwords.value == "MyUserToldAll"
+				) {
+					alert("Login Successfully");
+				} else {
+					alert("Login Failed");
+				}
+				if (Username.value.length < 5) {
+					alert("Your Account Are Not Exist (Require more than 5)");
+				}
+				if (Passwords.value.length < 5) {
+					alert("Your Passwords Require More Than 5 Key Words");
+				}
+			}
+		</script>
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+			import {
+				getAuth,
+				GoogleAuthProvider,
+				FacebookAuthProvider,
+				GithubAuthProvider,
+				signInWithRedirect,
+				getRedirectResult,
+				signInWithPopup,
+				signOut,
+				createUserWithEmailAndPassword,
+				signInWithEmailAndPassword,
+			} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+			import {
+				getDatabase,
+				set,
+				ref,
+				update,
+			} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+
+			const firebaseConfig = {
+				apiKey: "AIzaSyB86hJZa2uaW1z-XHOGyKD5zW2RUW0QxyQ",
+				authDomain: "jsi13-e4ebd.firebaseapp.com",
+				projectId: "jsi13-e4ebd",
+				storageBucket: "jsi13-e4ebd.appspot.com",
+				messagingSenderId: "622844809513",
+				appId: "1:622844809513:web:01381f22418a06550b6738",
+			};
+
+			const app = initializeApp(firebaseConfig);
+			const auth = getAuth(app);
+			const database = getDatabase(app);
+			const Goggleprovider = new GoogleAuthProvider(app);
+			const Facebookprovider = new FacebookAuthProvider(app);
+			const Githubprovider = new GithubAuthProvider(app);
+
+			let nameInput = document.getElementById("GmailLogin");
+			let passwordInput = document.getElementById("PasswordLogin");
+			let loginButton = document.getElementById("ButtonLogin");
+			let facebookLogin = document.getElementById("LoginFacebook");
+			let googleLogin = document.getElementById("LoginGoggle");
+			let githubLogin = document.getElementById("LoginGithub");
+
+			facebookLogin.addEventListener("click", (e) => {
+				signInWithPopup(auth, Facebookprovider)
+					.then((result) => {
+						// This gives you a Facebook Access Token. You can use it to access the Facebook API.
+						const credential =
+							FacebookAuthProvider.credentialFromResult(result);
+						const token = credential.accessToken;
+						// The signed-in user info.
+						const user = result.user;
+
+						location.replace("https://www.w3schools.com");
+						alert(user.displayName);
+						// ...
+					})
+					.catch((error) => {
+						// Handle Errors here.
+						const errorCode = error.code;
+						const errorMessage = error.message;
+						// The email of the user's account used.
+						const email = error.email;
+						// The AuthCredential type that was used.
+						const credential = FacebookAuthProvider.credentialFromError(error);
+						// ...
+
+						alert(errorMessage);
+					});
+			});
+		</script>
+	</body>
 </html>
